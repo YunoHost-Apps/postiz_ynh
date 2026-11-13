@@ -56,7 +56,7 @@ pushd $install_dir
 
     ynh_script_progression "Building the app..."
 
-    ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" TURBO_TELEMETRY_DISABLED=1 pnpm build
+    ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" TURBO_TELEMETRY_DISABLED=1 pnpm run build
 
     ynh_script_progression "Running DB migrations of the app..."
 
